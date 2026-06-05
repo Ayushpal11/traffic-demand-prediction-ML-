@@ -210,6 +210,7 @@ def add_day48_reference(train, test, smoothing=8.0):
 HIST_FEATURES = ["g_ref", "g_std", "gh_ref", "g5h_ref"]
 
 
+<<<<<<< HEAD
 # --- "Today's morning level" anchor (leak-free) -----------------------------
 # The test set is day-49 DAYTIME (minutes 135-825). For each location we already
 # observe day-49's early-morning window (minutes 0-120). That window tells us
@@ -260,6 +261,8 @@ def add_morning_anchor(train, test):
     return attach(train), attach(test)
 
 
+=======
+>>>>>>> origin/main
 # --- Master build -----------------------------------------------------------
 def build_base_features(train, test):
     """All deterministic (non-target) features. Returns processed train, test."""
@@ -278,6 +281,9 @@ def build_base_features(train, test):
     )
     # Day-48 historical demand profiles (leak-free, LOO on day-48 rows)
     train, test = add_day48_reference(train, test)
+<<<<<<< HEAD
     # Today's morning-level anchor (carries day-49's per-geohash demand level)
     train, test = add_morning_anchor(train, test)
+=======
+>>>>>>> origin/main
     return train, test

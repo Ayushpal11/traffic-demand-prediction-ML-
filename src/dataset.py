@@ -11,7 +11,10 @@ import pandas as pd
 
 from src.features import (
     build_base_features, oof_target_encoding, TARGET, HIST_FEATURES,
+<<<<<<< HEAD
     ANCHOR_FEATURES,
+=======
+>>>>>>> origin/main
 )
 
 # Columns target-encoded out-of-fold (high-card spatial keys)
@@ -30,7 +33,11 @@ NUM_FEATURES = [
     "LargeVehicles", "Landmarks",
     "Temperature", "Temperature_missing",
     "geohash_freq", "geohash5_freq", "geohash4_freq",
+<<<<<<< HEAD
 ] + HIST_FEATURES + ANCHOR_FEATURES
+=======
+] + HIST_FEATURES
+>>>>>>> origin/main
 
 
 def build_model_matrices(train_raw, test_raw, fold_ids, log_target=True):
