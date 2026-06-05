@@ -1,0 +1,30 @@
+# Data
+dataset/
+*.csv
+
+# Models
+*.pkl
+*.joblib
+*.h5
+
+# Outputs
+outputs/
+catboost_info/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.env
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
+
+.qodo
+.claude
